@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for part3part1 on 2024-04-04T15:05:30+02:00
+# fly.toml app configuration file generated for part3part1-rough-field-7367 on 2024-04-05T13:35:35+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'part3part1'
+app = 'part3part1-rough-field-7367'
 primary_region = 'cdg'
 
 [build]
