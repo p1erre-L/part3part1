@@ -6,7 +6,10 @@
     "scripts": {
         "start": "node index.js",
         "dev": "nodemon index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build:ui": "@powershell Remove-Item -Recurse -Force dist && cd ../../../FullStackOpen/part2/ && npm run build && @powershell Copy-Item dist ../../fullstackopenreact/part3part1/part3part1/",
+        "deploy": "git add . && git commit -m '' && git push origin main",
+        "deploy:full": "npm run build:ui && npm run deploy"
     },
     "author": "Matti Luukkainen",
     "license": "MIT",
